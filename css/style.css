@@ -1,0 +1,75 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #0F172A;
+    color: #F8FAFC;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.logo span{
+    color: #2563EB;
+}
+
+/* Navigation Links */
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #F8FAFC;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #2563EB;
+}
+
+/* Theme Button */
+.theme-btn{
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.theme-btn:hover{
+    background-color: #1D4ED8;
+}
