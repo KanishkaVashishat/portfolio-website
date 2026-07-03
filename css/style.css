@@ -1,4 +1,7 @@
 /* Google Fonts */
+html{
+    scroll-behavior: smooth;
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
 
 /* Reset */
@@ -709,4 +712,88 @@ color:#94A3B8;
 
 margin-top:10px;
 
+}
+.nav-links a.active{
+    color:#3B82F6;
+}
+.navbar{
+
+transition:.3s;
+
+}
+
+.navbar.scrolled{
+
+background:#0F172A;
+
+box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+}
+#topBtn{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563EB;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+}
+.reveal{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:.8s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+body.light{
+    background:#F8FAFC;
+    color:#111827;
+}
+
+body.light .navbar{
+    background:white;
+}
+
+body.light .card,
+body.light .tech-card,
+body.light .project-card,
+body.light .contact-card{
+    background:white;
+    color:#111827;
+}
+
+body.light p{
+    color:#475569;
+}
+
+body.light .btn{
+    color:#111827;
 }
